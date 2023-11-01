@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body>
+    <header>
+      <div class="flex justify-center items-center">
+        <div class="flex flex-col justify-center items-center">
+          <h1 class="text-6xl font-bold">Tic Tac Toe</h1>
+
+          <div>
+            <p class="player-1 text-xl">
+              Player-1 :
+              <span class="rounded-md move-player-1"></span>
+            </p>
+            <p class="player-1 text-xl">
+              Player-2 :
+              <span class="rounded-md move-player-2"></span>
+            </p>
+          </div>
+          <!-- <div class="flex justify-center items-center mt-10">
+            <a
+              href="game.php"
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              >Start Game</a
+            >
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <main class="mt-10">
+      <div
+        class="parent w-full px-4 sm:w-[400px] h-[400px] mx-auto mt-1 grid grid-cols-3 grid-rows-3"
+      >
+        <div
+          class="child-1 border-red-400 items-center flex border-r-8 border-b-8"
+        >
+          <span class="block mx-auto text-5xl" data-position="0"></span>
+        </div>
+        <div
+          class="child-2 border-t-0 border-8 border-red-400 items-center flex"
+        >
+          <span class="block mx-auto text-5xl" data-position="1"></span>
+        </div>
+        <div
+          class="child-3 border-l-8 border-b-8 border-red-400 items-center flex"
+        >
+          <span class="block mx-auto text-5xl" data-position="2"></span>
+        </div>
+        <div
+          class="child-4 border-l-0 border-8 border-red-400 items-center flex"
+        >
+          <span class="block mx-auto text-5xl" data-position="3"></span>
+        </div>
+        <div class="child-5 border-8 border-red-400 items-center flex">
+          <span class="block mx-auto text-5xl" data-position="4"></span>
+        </div>
+        <div
+          class="child-6 border-8 border-r-0 border-red-400 items-center flex"
+        >
+          <span class="block mx-auto text-5xl" data-position="5"></span>
+        </div>
+        <div
+          class="child-7 border-t-8 border-r-8 border-red-400 items-center flex"
+        >
+          <span class="block mx-auto text-5xl" data-position="6"></span>
+        </div>
+        <div
+          class="child-8 border-b-0 border-8 border-red-400 items-center flex"
+        >
+          <span class="block mx-auto text-5xl" data-position="7"></span>
+        </div>
+        <div
+          class="child-9 border-l-8 border-t-8 border-red-400 items-center flex"
+        >
+          <span class="block mx-auto text-5xl" data-position="8"></span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
